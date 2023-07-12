@@ -130,7 +130,7 @@ def UCB(df,threshhold,lembda,o,n_arms=12,n_epoch=5,c=1):
     return (np.argmax(np.mean(rewards_list_final,axis=0)),np.mean(accuracy_list),np.mean(sample_offloaded),np.mean(cost_list))
 
 #To run below file please run Finetuning_of_ElasticBERT_over_datasets.ipynb file first
-df_results_dict=pd.read_pickle('/home/divya/updated_code/Dataset/confidence_label_dict.pkl')
+df_results_dict=pd.read_pickle('path../Dataset/confidence_label_dict.pkl')
 dataset_name=['imdb','scitail','yelp','qqp','snli']
 o_value = [0.1,0.15,0.20,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6]
 threshhold = {'imdb':0.7,'scitail':0.85,'yelp':0.7,'qqp':0.75,'snli':0.75}
