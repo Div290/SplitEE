@@ -144,7 +144,7 @@ for dataset in dataset_name:
         result[offload_cost]=tuple(UCB(df,threshhold[dataset],lembda,offload_cost,n_arms=12,n_epoch=5,c=1))
     result_dict[dataset]=result
 
-with open("/home/divya/updated_code/Dataset/ucb_with_side_information.pkl",'wb') as file:
+with open("path../Dataset/ucb_with_side_information.pkl",'wb') as file:
     pickle.dump(result_dict,file)
 
 # for getting result for single dataset and offloading cost run below code
