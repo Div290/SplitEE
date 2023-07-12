@@ -125,7 +125,7 @@ def UCB(df,threshhold,lembda,o,n_arms=12,n_epoch=5,c=1):
 
 
 #To run below file please run Finetuning_of_ElasticBERT_over_datasets.ipynb file first
-df_results_dict=pd.read_pickle('/home/divya/updated_code/Dataset/confidence_label_dict.pkl')
+df_results_dict=pd.read_pickle('path../Dataset/confidence_label_dict.pkl')
 dataset_name=['imdb','scitail','yelp','qqp','snli']
 o_value = [0.1,0.15,0.20,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6]
 threshhold = {'imdb':0.7,'scitail':0.85,'yelp':0.7,'qqp':0.75,'snli':0.75}
@@ -140,7 +140,7 @@ for dataset in dataset_name:
         result[offload_cost]=tuple(UCB(df,threshhold[dataset],lembda,offload_cost,n_arms=12,n_epoch=5,c=1))
     result_dict[dataset]=result
 
-with open("/home/divya/updated_code/Dataset/ucb_result_without_using_side_information.pkl",'wb') as file:
+with open("path../Dataset/ucb_result_without_using_side_information.pkl",'wb') as file:
     pickle.dump(result_dict,file)
 
 # for getting result for single dataset and offloading cost run below code
