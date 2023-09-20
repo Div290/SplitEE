@@ -1,3 +1,7 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/splitee-early-exit-in-deep-neural-networks/paraphrase-identification-on-yelp)](https://paperswithcode.com/sota/paraphrase-identification-on-yelp?p=splitee-early-exit-in-deep-neural-networks)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/splitee-early-exit-in-deep-neural-networks/natural-language-inference-on-scitail)](https://paperswithcode.com/sota/natural-language-inference-on-scitail?p=splitee-early-exit-in-deep-neural-networks)
+
 ## SplitEE : Early Exit in Deep Neural Networks with Split Computing
 This repository is the official implementation of SplitEE. The experimental section of SplitEE can be divided into two major parts:
 
